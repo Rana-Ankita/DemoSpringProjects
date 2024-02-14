@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<body>
+<h2>This is home page</h2>
+<h1>Called by home controller.........</h1>
+<h2>URL /home</h2>
+<%String name = (String)request.getAttribute("name");
+List<String> friends = (List<String>)request.getAttribute("f");
+%>
+
+<h2>My Name is <%=name%>></h2>
+<h2>We are <% for(String s : friends){
+	out.println(s);
+}%> friends</h2>
+</body>
+</html>

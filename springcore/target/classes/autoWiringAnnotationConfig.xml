@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config/>
+
+    <bean class="com.springcore.autoWiring.autowireAnnotaition.Address" name="address">
+        <property name="street" value="Ganesh Vihar"/>
+        <property name="city" value="Dehradun"/>
+    </bean>
+
+    <bean class="com.springcore.autoWiring.autowireAnnotaition.Address" name="address1">
+        <property name="street" value="Saraswati Vihar"/>
+        <property name="city" value="Dehradun"/>
+    </bean>
+
+    <!--Both byType/byName use setter injection-->
+    <!--<bean class="com.springcore.autoWiring.Employee" name="emp1" autowire="byName">-->
+    <!--<bean class="com.springcore.autoWiring.Employee" name="emp1" autowire="byType"/>-->
+
+    <!--<bean class="com.springcore.autoWiring.autowireAnnotaition.Employee" name="emp1" autowire="constructor"/>-->
+    <bean class="com.springcore.autoWiring.autowireAnnotaition.Employee" name="emp1"/>
+</beans>

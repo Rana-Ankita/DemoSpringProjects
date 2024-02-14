@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>This is home page</h2>
+<h1>Called by home controller.........</h1>
+<h2>url /home</h2>
+</body>
+</html>

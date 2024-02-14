@@ -1,0 +1,27 @@
+<%@page import="java.time.LocalDateTime"%>
+<%@page isELIgnored="false"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>This is Help page</title>
+</head>
+<body>
+<h2>We are going to use ModelAndView</h2>
+<h1>Called by home controller.........</h1>
+<%--  <%
+String name = (String)request.getAttribute("name");
+LocalDateTime time=(LocalDateTime) request.getAttribute("time");
+%>
+
+<h2>My Brother name is <%=name%></h2>
+<h2>Current time is <%=time %></h2> --%>
+<!-- We can directly get data using expression language -->
+<h2>My Brother name is ${name}</h2>
+<h2>Current time is ${time}</h2>
+<h2>URL /help</h2>
+
+<hr>
+</body>
+</html>
